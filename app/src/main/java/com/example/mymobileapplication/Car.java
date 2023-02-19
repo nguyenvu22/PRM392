@@ -9,11 +9,15 @@ public class Car {
     private int img;
     private String name;
     private int type;
+    private int price;
+    private String desc;
 
-    public Car(int img, String name, int type) {
+    public Car(int img, String name, int type, int price, String desc) {
         this.img = img;
         this.name = name;
         this.type = type;
+        this.price = price;
+        this.desc = desc;
     }
 
     public int getImg() {
@@ -38,5 +42,21 @@ public class Car {
 
     public void setType(int type) {
         this.type = type;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

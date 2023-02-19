@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (loginEmail.getText().toString().equals("admin") && loginPassword.getText().toString().equals("123456")) {
+                if (loginEmail.getText().toString().equals("admin") || loginEmail.getText().toString().equals("vune") && loginPassword.getText().toString().equals("123456")) {
                     nextActivity();
                 } else {
                     Toast.makeText(MainActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
